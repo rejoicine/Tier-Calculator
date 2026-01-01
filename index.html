@@ -130,7 +130,7 @@ button:active{transform:translateY(2px)}
   <button id="musicBtn" onclick="toggleMusic()">🔊</button>
 
   <h2>Bloxd Tier Calculator</h2>
-  <div class="subtitle">PvP Skill Assessment • Bloxd Style</div>
+  <div class="subtitle">Tier Test Calculator • By ArtCombo</div>
 
   <div id="scoreBox">
     <b>What was the score?</b>
@@ -234,7 +234,7 @@ function togglePrevTier(){
 function hpToTier(base,hp){
   let z=(hp+100)/200;
   z=Math.min(Math.max(z,1e-15),1-1e-15);
-  return base+4.5*Math.log(z/(1-z));
+  return base+4.0*Math.log(z/(1-z));
 }
 
 function calculate(){
